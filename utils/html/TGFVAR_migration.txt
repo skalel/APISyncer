@@ -1,0 +1,12 @@
+$table->primary(['NUNOTA', 'SEQUENCIA', 'NUNOTAORIG', 'SEQUENCIAORIG']);
+$table->integer('NUNOTA')->length(22);
+$table->integer('SEQUENCIA')->length(22);
+$table->integer('NUNOTAORIG')->length(22);
+$table->integer('SEQUENCIAORIG')->length(22);
+$table->FLOAT('QTDATENDIDA')->length(22);
+$table->FLOAT('CUSATEND')->length(22);
+$table->integer('ORDEMPROD')->length(22);
+$table->string('STATUSNOTA')->length(1)->default();
+$table->integer('NROMEMORANDO')->length(22);
+$table->string('NROATOCONCDRAW')->length(11);
+$table->string('NROREGEXPORT')->length(12);

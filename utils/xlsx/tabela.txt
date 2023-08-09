@@ -1,0 +1,120 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateTabelaTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('tabela', function (Blueprint $table) {
+        $table->primary()->integer('CODEMP')->length(5);
+        $table->primary()->string('NOMEFANTASIA')->length(40);
+        $table->primary()->string('RAZAOSOCIAL')->length(40);
+        $table->primary()->string('RAZAOABREV')->length(15);
+        $table->primary()->integer('CODEMPMATRIZ')->length(5);
+        $table->primary()->integer('CODEND')->length(10);
+        $table->primary()->string('NUMEND')->length(6);
+        $table->primary()->string('COMPLEMENTO')->length(10);
+        $table->primary()->integer('CODBAI')->length(10);
+        $table->primary()->integer('CODCID')->length(10);
+        $table->primary()->string('CEP')->length(8);
+        $table->primary()->string('TELEFONE')->length(13);
+        $table->primary()->string('FAX')->length(13);
+        $table->primary()->string('TELEX')->length(12);
+        $table->primary()->string('EMAIL')->length(80);
+        $table->primary()->string('HOMEPAGE')->length(255);
+        $table->primary()->integer('NUMPROPR')->length(5);
+        $table->primary()->string('PRINCTITULAR')->length(40);
+        $table->primary()->string('CGC')->length(14);
+        $table->primary()->string('INSCESTAD')->length(16);
+        $table->primary()->string('INSCMUN')->length(16);
+        $table->primary()->integer('CODMUN')->length(10);
+        $table->primary()->integer('NATESTAB')->length(5);
+        $table->primary()->integer('NATJUR')->length(5);
+        $table->primary()->string('RAMOATIV')->length(40);
+        $table->primary()->integer('ATIVECON')->length(10);
+        $table->primary()->string('REGJUNTACOM')->length(12);
+        $table->primary()->length(7);
+        $table->primary()->text('LOGOMARCA')->length(4000);
+        $table->primary()->string('FINANCEIRO')->length(1);
+        $table->primary()->string('ESTOQUE')->length(1);
+        $table->primary()->string('CARGAS')->length(1);
+        $table->primary()->string('COMISSOES')->length(1);
+        $table->primary()->string('PRODUCAO')->length(1);
+        $table->primary()->string('SUPDECISAO')->length(1);
+        $table->primary()->string('LIVROSFISCAIS')->length(1);
+        $table->primary()->length(7);
+        $table->primary()->string('FOLHAPAGTO')->length(1);
+        $table->primary()->string('CODCNL')->length(10);
+        $table->primary()->string('SIMPLES')->length(1);
+        $table->primary()->integer('CODPARC')->length(10);
+        $table->primary()->float('LIMCURVA_B', 0, Sim)->length(126);
+        $table->primary()->float('LIMCURVA_C', 0, Sim)->length(126);
+        $table->primary()->integer('EMPAGRUPARGOL')->length(5);
+        $table->primary()->string('SERIENFDES')->length(4);
+        $table->primary()->string('MODELONFDES')->length(2);
+        $table->primary()->string('COOPERATIVA')->length(1);
+        $table->primary()->length(7);
+        $table->primary()->string('DUPLIV')->length(1);
+        $table->primary()->string('CPFRESP')->length(11);
+        $table->primary()->integer('CODREGTRIB')->length(5);
+        $table->primary()->integer('TIPOSN')->length(10);
+        $table->primary()->integer('CODPARCDIV')->length(10);
+        $table->primary()->string('MD5PAF')->length(32);
+        $table->primary()->string('RAZAOSOCIALCOMPLETA')->length(250);
+        $table->primary()->string('SERVIDORSMTP')->length(80);
+        $table->primary()->string('TIPOSMTP')->length(1);
+        $table->primary()->string('USUARIOSMTP')->length(80);
+        $table->primary()->string('SENHASMTP')->length(80);
+        $table->primary()->integer('PORTASMTP')->length(5);
+        $table->primary()->string('SEGURANCASMTP')->length(1);
+        $table->primary()->string('LATITUDE')->length(255);
+        $table->primary()->string('LONGITUDE')->length(255);
+        $table->primary()->string('SIMPLESNACNAUF')->length(1);
+        $table->primary()->string('DMACODINSP')->length(2);
+        $table->primary()->string('DMAESPECIAL')->length(1);
+        $table->primary()->length(7);
+        $table->primary()->string('CODQUALASSIN')->length(3);
+        $table->primary()->integer('CODPARCRESP')->length(10);
+        $table->primary()->string('SITESPECIALRESP')->length(2);
+        $table->primary()->string('EXIGEISSQN')->length(2);
+        $table->primary()->string('REGESPTRIBUT')->length(2);
+        $table->primary()->string('RNTRC')->length(8);
+        $table->primary()->integer('CLASSTRIB')->length(5);
+        $table->primary()->integer('CNAEPREPON')->length(10);
+        $table->primary()->integer('INDCOOP')->length(5);
+        $table->primary()->integer('INDCONSTR')->length(5);
+        $table->primary()->integer('INFOOBRA')->length(5);
+        $table->primary()->integer('CODUSU')->length(5);
+        $table->primary()->length(7);
+        $table->primary()->integer('ACDINTISENMULTA')->length(5);
+        $table->primary()->integer('CODPARCEMPSOFT')->length(10);
+        $table->primary()->integer('CODCTTPARCEMPSOFT')->length(10);
+        $table->primary()->integer('INDSITESP')->length(5);
+        $table->primary()->string('TIPTRANSMNFSE')->length(1);
+        $table->primary()->integer('COREMPRESA')->length(10);
+        $table->primary()->integer('QTDACESSOS')->length(10);
+        $table->primary()->string('ENVESOCIAL')->length(1);
+        $table->primary()->string('RECIBOESOCIAL')->length(40);
+        $table->primary()->length(7);
+        $table->primary()->length(7);
+        $table->primary()->integer('INDOPCCP')->length(5);
+        $table->primary()->integer('NUVERSAO')->length(19);
+        $table->primary()->string('USARAZAOSOCIAL')->length(1);
+        $table->primary()->length(7);
+        $table->primary()->string('EMPIDENOTAS')->length(50);
+        $table->primary()->string('PRODUTORRURAL')->length(1);
+        $table->primary()->string('COTM')->length(20);
+        $table->primary()->length(7);
+        $table->primary()->string('NUREST')->length(25);
+        $table->primary()->string('NUMTAF')->length(12);
+    });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('tabela');
+    }
+}

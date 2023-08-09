@@ -1,0 +1,6 @@
+$table->primary([CODBCO]);
+$table->integer('CODBCO')->length(22);
+$table->string('ABREVIATURA')->length(15);
+$table->string('NOMEBCO')->length(40);
+$table->integer('CTACMC7INI')->length(22);
+$table->integer('CTACMC7FIM')->length(22);

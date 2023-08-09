@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html class=" cwgx idc0_343"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <style>
+         table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <table width="100%" cellspacing="1" cellpadding="1" border="1">
+      <tbody><tr>
+         <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="left">TABELA</th>
+      </tr>
+      <tr>
+         <td align="left"> TGFITE</td>
+      </tr>
+      </tbody></table><table width="100%" cellspacing="1" cellpadding="1" border="1">
+         <tbody><tr>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NOMECAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DESCRCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TIPOCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TAMANHO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">PK</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NULL</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DEFAULT</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">OPCOES</th>
+         </tr>
+         <tr>
+            <td align="center"> NUTAB</td>
+            <td align="center"> Tabela</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUNOTA</td>
+            <td align="center"> Nro único</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> S</td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SEQUENCIA</td>
+            <td align="center"> Sequência</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> S</td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEMP</td>
+            <td align="center"> Cód.Empresa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPROD</td>
+            <td align="center"> Produto</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODLOCALORIG</td>
+            <td align="center"> Local origem</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CONTROLE</td>
+            <td align="center"> Controle</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 11</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> ' ' </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> USOPROD</td>
+            <td align="center"> Uso do Produto</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'V' </td>
+            <td align="center"> 1-Subproduto | 2-Prod.Intermediário | 
+4-Demonstração | B-Brinde | C-Consumo | D-Revenda (por fórmula) | 
+E-Embalagem | F-Brinde (NF) | I-Imobilizado | M-Matéria prima | O-Outros
+ insumos | P-Em Processo | R-Revenda | S-Serviço | T-Terceiros | V-Venda
+ (fabricação própria)</td>
+         </tr><tr>
+            <td align="center"> CODCFO</td>
+            <td align="center"> CFOP</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDNEG</td>
+            <td align="center"> Quantidade</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDENTREGUE</td>
+            <td align="center"> Qtd. entregue</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDCONFERIDA</td>
+            <td align="center"> Qtd. corte</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRUNIT</td>
+            <td align="center"> Vlr. unitário</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRTOT</td>
+            <td align="center"> Vlr. total</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRCUS</td>
+            <td align="center"> Vlr. custos</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASEIPI</td>
+            <td align="center"> Base do IPI</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRIPI</td>
+            <td align="center"> Vlr. IPI</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASEICMS</td>
+            <td align="center"> Base ICMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRICMS</td>
+            <td align="center"> Vlr. ICMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESC</td>
+            <td align="center"> Vlr. desconto</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESUBSTIT</td>
+            <td align="center"> Base substituição</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRSUBST</td>
+            <td align="center"> Vlr. substituição</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQICMS</td>
+            <td align="center"> Alíq. ICMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQIPI</td>
+            <td align="center"> Alíq. IPI</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PENDENTE</td>
+            <td align="center"> Pendente</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'S' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CODVOL</td>
+            <td align="center"> Unidade</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> '0' </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTRIB</td>
+            <td align="center"> Tributação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 0-00-Tributada integralmente | 
+10-10-Tributada e c/cobrança por substituição | 20-20-Com redução de 
+base de cálculo | 30-30-Isenta e não tribut.e c/cobrança por subst. | 
+40-40-Isenta | 41-41-Não tributada | 50-50-Suspensão | 51-51-Diferimento
+ | 60-60-ICMS cobrado anteriormente por substituição | 70-70-Com redução
+ de base e c/cobrança por subst. | 90-90-Outras</td>
+         </tr><tr>
+            <td align="center"> ATUALESTOQUE</td>
+            <td align="center"> Atualiza estoque</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> -1 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> OBSERVACAO</td>
+            <td align="center"> Observação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 4000</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RESERVA</td>
+            <td align="center"> Reserva</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> STATUSNOTA</td>
+            <td align="center"> Status da Nota</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'P' </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODOBSPADRAO</td>
+            <td align="center"> Obs Padrão</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODVEND</td>
+            <td align="center"> Vendedor</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEXEC</td>
+            <td align="center"> Executante</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> FATURAR</td>
+            <td align="center"> Faturar</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'S' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> VLRREPRED</td>
+            <td align="center"> Vlr. redução</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESCBONIF</td>
+            <td align="center"> Bonificação</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESC</td>
+            <td align="center"> % desconto</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> M3</td>
+            <td align="center"> Metro Cúbico</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQICMSRED</td>
+            <td align="center"> Alíq. ICMS Reduzida</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPARCEXEC</td>
+            <td align="center"> Cód. Parceiro Exec</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CUSTO</td>
+            <td align="center"> Custo</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESUBSTSEMRED</td>
+            <td align="center"> Base ST S/Redução</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODUSU</td>
+            <td align="center"> Cód. Usuário</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTALTER</td>
+            <td align="center"> Dt. Alteração</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SOLCOMPRA</td>
+            <td align="center"> Solic. compra</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CODTRIBISS</td>
+            <td align="center"> Cód. trib. ISS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCFPS</td>
+            <td align="center"> Cód. CFPS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQISS</td>
+            <td align="center"> Alíq. ISS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDFORMULA</td>
+            <td align="center"> Qtd. fórmula</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ATUALESTTERC</td>
+            <td align="center"> Estoque terc.</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESCBONIF</td>
+            <td align="center"> % desc. bonif.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TERCEIROS</td>
+            <td align="center"> Terceiros</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> ENDIMAGEM</td>
+            <td align="center"> End. imagem</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 100</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALTURA</td>
+            <td align="center"> Altura</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LARGURA</td>
+            <td align="center"> Largura</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ESPESSURA</td>
+            <td align="center"> Espessura</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCAV</td>
+            <td align="center"> Cód. cavalete</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPROC</td>
+            <td align="center"> Cód. processo</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDPECA</td>
+            <td align="center"> Qtd. peça</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PRECOBASE</td>
+            <td align="center"> Preço base</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRACRESCDESC</td>
+            <td align="center"> Vlr. acresc./desc.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRRETENCAO</td>
+            <td align="center"> Vlr. retenção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CSTIPI</td>
+            <td align="center"> C.S.T IPI</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> -1-(-1)-Não sujeita ao IPI | 
+0-00-Entrada c/Recuperação de Crédito | 1-01-Entrada c/Alíquota zero | 
+2-02-Entrada Isenta | 3-03-Entrada Não Tributada | 4-04-Entrada Imune | 
+49-49-Outras Entradas | 5-05-Entrada c/Suspensão | 50-50-Saída 
+c/Recuperação de Crédito | 51-51-Saída c/Alíquota zero | 52-52-Saída 
+Isenta | 53-53-Saída Não Tributada | 54-54-Saída Imune | 55-55-Saída 
+c/Suspensão | 99-99-Outras Saídas</td>
+         </tr><tr>
+            <td align="center"> PERCCOM</td>
+            <td align="center"> % comissão</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRCOM</td>
+            <td align="center"> Vlr. comissão</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALTPRECO</td>
+            <td align="center"> Alt. Preço Igual</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> B-Atualiza menor | M-Atualiza maior | N-Não Atualiza</td>
+         </tr><tr>
+            <td align="center"> QTDFIXADA</td>
+            <td align="center"> Qtd. fixada</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCCOMGER</td>
+            <td align="center"> % comiss. Gerente</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRCOMGER</td>
+            <td align="center"> Comiss. gerente</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDWMS</td>
+            <td align="center"> Qtd. WMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASICMMOD</td>
+            <td align="center"> Mod. Base ICMS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASICMSTMOD</td>
+            <td align="center"> Mod. Base ICMS ST</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDFAT</td>
+            <td align="center"> Qtd. faturada</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESTUFDEST</td>
+            <td align="center"> Base ST UF Destino</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRICMSUFDEST</td>
+            <td align="center"> Vlr. ICMS UF Destino</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESTANT</td>
+            <td align="center"> Base ST ant.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> GRUPOTRANSG</td>
+            <td align="center"> Grupo transg.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PRODUTONFE</td>
+            <td align="center"> Produto para NF-e</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 60</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> GTINNFE</td>
+            <td align="center"> GTINNFE</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> GTINTRIBNFE</td>
+            <td align="center"> GTINTRIBNFE</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPROMO</td>
+            <td align="center"> Cód. promoção</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRPROMO</td>
+            <td align="center"> Vlr. Promoção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRLIQPROM</td>
+            <td align="center"> Vlr. liq. promoção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PRECOBASEQTD</td>
+            <td align="center"> Preço base qtd.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCPUREZA</td>
+            <td align="center"> % Pureza</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCGERMIN</td>
+            <td align="center"> % Germinação</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUPROMOCAO</td>
+            <td align="center"> Nro. Promoção</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESCPROM</td>
+            <td align="center"> % desc. promoção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRPTOPUREZA</td>
+            <td align="center"> Vlr.Ponto Pureza</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODANTECIPST</td>
+            <td align="center"> Cód.Antecipação ST</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 1-1-Pgto de ST efetuado pelo 
+destinatário quando não efetuado ou efetuado a menor pelo substituto | 
+2-2-Antecip. tribut. efetuada pelo destinatário apenas como complemento 
+do diferencial de alíquota | 3-3-Antecip. tribut. com MVA efetuada pelo 
+destinatário sem encerrar a fase de tributação | 4-4-Antecip. tribut. 
+com MVA efetuada pelo destinatário encerrando a fase de tributação | 
+5-5-Substituição tributária interna motivada por regime especial de 
+tributação | 6-6-ICMS pago na importação | A-A-ST informada pelo 
+substituto/substituído que não incorra em nenhuma das situações 
+anteriores | N-N-(Não Usa) Operação não envolve ST</td>
+         </tr><tr>
+            <td align="center"> CSOSN</td>
+            <td align="center"> Cód. situação op. Simples nacional (CSON)</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 101-101-Tributada pelo Simples Nacional 
+com permissão de crédito | 102-102-Tributada pelo Simples Nacional sem 
+permissão de crédito | 103-103-Isenção do ICMS no Simples Nacional para 
+faixa de receita bruta | 201-201-Tributada pelo Simples Nacional com 
+permissão de crédito e com cobrança do ICMS por ST | 202-202-Tributada 
+pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS 
+por ST | 203-203-Isenção do ICMS no Simples Nacional para faixa de 
+receita bruta e com cobrança do ICMS por ST | 300-300-Imune | 
+400-400-Não tributada pelo Simples Nacional | 500-500-ICMS cobrado 
+anteriormente por substituição tributária (substituído) ou por 
+antecipação | 900-900-Outros</td>
+         </tr><tr>
+            <td align="center"> STATUSLOTE</td>
+            <td align="center"> Status do Lote</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> A-Aguardando Aprovação | N-Nenhum | P-Aprovado | Q-Quarentena | R-Reprovado</td>
+         </tr><tr>
+            <td align="center"> QTDVOL</td>
+            <td align="center"> Base Cálc. Amostragem</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTINICIO</td>
+            <td align="center"> Dt.Prev.Entrega</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRUNITDOLAR</td>
+            <td align="center"> Vlr.Unitário em Dólar</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASEISS</td>
+            <td align="center"> Base do ISS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRISS</td>
+            <td align="center"> Vlr. ISS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTPA</td>
+            <td align="center"> Tipo Atendimento</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMPEDIDO2</td>
+            <td align="center"> Número Pedido</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 15</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SEQPEDIDO2</td>
+            <td align="center"> Seq. no Pedido</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 6</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRTROCA</td>
+            <td align="center"> Vlr. Troca</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VARIACAOFCP</td>
+            <td align="center"> Variação da Fórmula</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESCDIGITADO</td>
+            <td align="center"> % desc. digitado</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESCTGFDES</td>
+            <td align="center"> % desc. promoção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SEQUENCIAFISCAL</td>
+            <td align="center"> Sequência Fiscal</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESCDIGITADO</td>
+            <td align="center"> Vlr. desc. digitado</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODMOTDESONERAICMS</td>
+            <td align="center"> Cód.Mot.Desoneração ICMS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 1-Táxi | 16-Olimpíadas Rio 2016 | 
+2-Deficiente Físico | 3-Produtor Agropecuário | 4-Frotista/Locadora | 
+5-Diplomático/Consular | 6-Utilitários e Motocicletas da Amazônia 
+Ocidental e Áreas de Livre Comércio | 7-SUFRAMA | 8-Venda a Órgãos 
+Públicos | 9-Outros | 90-Solicitado pelo Fisco</td>
+         </tr><tr>
+            <td align="center"> VLRSTEXTRANOTA</td>
+            <td align="center"> Valor ST Extra Nota</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODLOCALTERC</td>
+            <td align="center"> Local terceiros</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ORIGPROD</td>
+            <td align="center"> Origem do Produto</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 0-0-Nacional, exceto as indicadas nos 
+códigos 3, 4, 5 e 8 | 1-1-Estrangeira, importação direta, exceto a 
+indicada no código 6 | 2-2-Estrangeira, adquirida no mercado interno, 
+exceto a indicada no código 7 | 3-3-Nacional, mercadoria ou bem com 
+conteúdo de importação superior a 40% e inferior ou igual a 70% | 
+4-4-Nacional, cuja produção tenha sido feita em conformidade com os 
+processos produtivos básicos | 5-5-Nacional, mercadoria ou bem com 
+conteúdo de importação inferior ou igual a 40% | 6-6-Estrangeira, 
+importação direta, sem similar nacional, constante em lista da CAMEX | 
+7-7-Estrangeira, adquirida no mercado interno, sem similar nacional, 
+constante em lista da CAMEX | 8-8-Nacional, mercadoria ou bem com 
+Conteúdo de Importação superior a 70%</td>
+         </tr><tr>
+            <td align="center"> PERCDESCBASE</td>
+            <td align="center"> Desc. p/ Preço Base</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NRSERIERESERVA</td>
+            <td align="center"> Nro série</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 60</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRUNITLOC</td>
+            <td align="center"> Vlr. Unit. Locação</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRICMSANT</td>
+            <td align="center"> Vlr ICMS destacado da oper. própria de oper. ant.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESUBSTITANT</td>
+            <td align="center"> Base de Cálc. da ST de oper. ant.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRSUBSTANT</td>
+            <td align="center"> Vlr. do ICMS da  ST da oper. ant.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMEROOS</td>
+            <td align="center"> Número OS Gub.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMCONTRATO</td>
+            <td align="center"> Contrato</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> IDALIQICMS</td>
+            <td align="center"> Cód. Alíq. ICMS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRUNITMOE</td>
+            <td align="center"> Vlr. Unit. Moeda</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESCMOE</td>
+            <td align="center"> Vlr. Desc. Moeda</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRTOTMOE</td>
+            <td align="center"> Vlr. Tot. Moeda</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODVOLPARC</td>
+            <td align="center"> Cód. Volume Parceiro</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 6</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODENQIPI</td>
+            <td align="center"> Cód. Enq. Legal IPI</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODESPECST</td>
+            <td align="center"> Código Especificador ST</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUFOP</td>
+            <td align="center"> Finalidade da Operação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESUBSTITUNITORIG</td>
+            <td align="center"> Base ST unitária do pedido de origem</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRSUBSTUNITORIG</td>
+            <td align="center"> Vlr. ST unitário do pedido de origem</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> GERAPRODUCAO</td>
+            <td align="center"> Necessidade de Produção</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'S' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CODAGREGACAO</td>
+            <td align="center"> Cód. de Agregação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 20</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> INDESCALA</td>
+            <td align="center"> Indicador de Escala Relevante</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Produzido em Escala NÃO Relevante | S-Produzido em Escala Relevante | null-Não se aplica</td>
+         </tr><tr>
+            <td align="center"> CNPJFABRICANTE</td>
+            <td align="center"> CNPJ do Fabricante da Mercadoria</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODBENEFNAUF</td>
+            <td align="center"> Cód. de Benefício Fiscal na UF</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 10</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESTFCPINTANT</td>
+            <td align="center"> Base ST FCP Interno Anterior</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCSTFCPINTANT</td>
+            <td align="center"> % ST FCP Interno Anterior</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRSTFCPINTANT</td>
+            <td align="center"> Vlr. ST FCP Interno Anterior</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCDESCFORNECEDOR</td>
+            <td align="center"> % Desconto Fornecedor</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ORIGEMBUSCA</td>
+            <td align="center"> Origem da busca</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 18</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> A-Produto alternativo | G-Busca Geral | S-Produto sugerido</td>
+         </tr><tr>
+            <td align="center"> PRODUTOPESQUISADO</td>
+            <td align="center"> Produto pesquisado</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQSTEXTRANOTA</td>
+            <td align="center"> Alíquota ST Extra Nota</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASESTEXTRANOTA</td>
+            <td align="center"> Base ST Extra Nota</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDTRIBEXPORT</td>
+            <td align="center"> Qtd. tributação para exportação</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQSTFCPSTANT</td>
+            <td align="center"> Alíquota da ST de oper. ant.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRVENDAPROMO</td>
+            <td align="center"> Vlr. Venda Promoção</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRREPREDSEMDESC</td>
+            <td align="center"> Vlr. redução sem desconto</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRICMSDIFERIDO</td>
+            <td align="center"> Vlr. ICMS Diferido</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIPOSEPARACAO</td>
+            <td align="center"> Tipo de separação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não separa | S-Separa na mesma empresa</td>
+         </tr><tr>
+            <td align="center"> CODDOCARRECAD</td>
+            <td align="center"> Cód. Mod. Documento de arrecadação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 0-Documento Estadual de Arrecadação | 1-GNRE</td>
+         </tr><tr>
+            <td align="center"> NUMDOCARRECAD</td>
+            <td align="center"> Número Documento de arrecadação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 30</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 0-Documento Estadual de Arrecadação | 1-GNRE</td>
+         </tr><tr>
+            <td align="center"> BASECALCSTEXTRANOTA</td>
+            <td align="center"> Base de Cálculo ST Extra Nota</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> REDBASEST</td>
+            <td align="center"> Redução da Base ST</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> MARGLUCRO</td>
+            <td align="center"> Margem de Lucro</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PERCREDVLRIPI</td>
+            <td align="center"> % Redução de Vlr. IPI</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+      </tr></tbody></table>
+   
+</body></html>

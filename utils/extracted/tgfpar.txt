@@ -1,0 +1,2 @@
+Schema::create('TGFPAR', function (Blueprint $table) {
+});

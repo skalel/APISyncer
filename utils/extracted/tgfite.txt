@@ -1,0 +1,2 @@
+Schema::create('TGFITE', function (Blueprint $table) {
+});

@@ -1,0 +1,2 @@
+Schema::create('TGFNAT', function (Blueprint $table) {
+});

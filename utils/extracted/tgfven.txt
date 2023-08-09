@@ -1,0 +1,2 @@
+Schema::create('TGFVEN', function (Blueprint $table) {
+});

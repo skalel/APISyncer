@@ -1,0 +1,12 @@
+$table->primary([CODCFO]);
+$table->integer('CODCFO')->length(22);
+$table->string('DESCRCFO')->length(30);
+$table->integer('CODCTACTB')->length(22);
+$table->integer('GRUPOCFO')->length(22);
+$table->string('CONVPRODUZ')->length(1)->default();
+$table->string('TRIBUTADASCIAP')->length(1)->default();
+$table->string('TIPICMS')->length(1)->default();
+$table->string('CALCDIFICMS')->length(1)->default();
+$table->string('TIPO')->length(1);
+$table->string('RECBRUTAEFDBLOCOP')->length(1)->default();
+$table->string('TIPOPERPRODEPE')->length(1);

@@ -1,0 +1,9 @@
+$table->primary([NUTAB]);
+$table->integer('NUTAB')->length(22);
+$table->integer('CODTAB')->length(22);
+$table->date('DTVIGOR')->length(7);
+$table->date('DTALTER')->length(7);
+$table->FLOAT('PERCENTUAL')->length(22);
+$table->integer('CODTABORIG')->length(22);
+$table->string('JAPE_ID')->length(50);
+$table->string('UTILIZADECCUSTO')->length(1);

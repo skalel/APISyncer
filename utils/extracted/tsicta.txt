@@ -1,0 +1,2 @@
+Schema::create('TSICTA', function (Blueprint $table) {
+});

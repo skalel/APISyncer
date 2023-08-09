@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html class=" lmszpdn idc0_343"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <style>
+         table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <table width="100%" cellspacing="1" cellpadding="1" border="1">
+      <tbody><tr>
+         <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="left">TABELA</th>
+      </tr>
+      <tr>
+         <td align="left"> TGFFIN</td>
+      </tr>
+      </tbody></table><table width="100%" cellspacing="1" cellpadding="1" border="1">
+         <tbody><tr>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NOMECAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DESCRCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TIPOCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TAMANHO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">PK</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NULL</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DEFAULT</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">OPCOES</th>
+         </tr>
+         <tr>
+            <td align="center"> NUFIN</td>
+            <td align="center"> Nro Único</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> S</td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEMP</td>
+            <td align="center"> Empresa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMNOTA</td>
+            <td align="center"> Nro Nota</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SERIENOTA</td>
+            <td align="center"> Série da Nota</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 3</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTNEG</td>
+            <td align="center"> Dt. Negociação</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DESDOBRAMENTO</td>
+            <td align="center"> Desdob.</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DHMOV</td>
+            <td align="center"> Dt/Hr Movimentação</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTVENCINIC</td>
+            <td align="center"> Dt. Venc. Inicial</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTVENC</td>
+            <td align="center"> Dt. Vencimento</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DHBAIXA</td>
+            <td align="center"> Data Baixa</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTCONTAB</td>
+            <td align="center"> Dt. Contabilização</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTCONTABBAIXA</td>
+            <td align="center"> Dt. Contabilização Baixa</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPARC</td>
+            <td align="center"> Parceiro</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTIPOPER</td>
+            <td align="center"> Tipo Operação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DHTIPOPER</td>
+            <td align="center"> Dt/Hr Operação</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> TO_DATE('01/01/1998', 'DD/MM/YYYY') </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODBCO</td>
+            <td align="center"> Banco</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCTABCOINT</td>
+            <td align="center"> Conta Bancária</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODNAT</td>
+            <td align="center"> Natureza</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCENCUS</td>
+            <td align="center"> Centro Resultado</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPROJ</td>
+            <td align="center"> Projeto</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODVEND</td>
+            <td align="center"> Vendedor</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODMOEDA</td>
+            <td align="center"> Moeda</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTIPTIT</td>
+            <td align="center"> Tipo de Título</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMDUPL</td>
+            <td align="center"> Nro Duplicata</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DESDOBDUPL</td>
+            <td align="center"> Desdob. Duplicata</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NOSSONUM</td>
+            <td align="center"> Nosso Número</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 12</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> HISTORICO</td>
+            <td align="center"> Histórico</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 255</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESDOB</td>
+            <td align="center"> Vlr do Desdobramento</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRVENDOR</td>
+            <td align="center"> Vlr Vendor</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRIRF</td>
+            <td align="center"> Vlr IRF</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRISS</td>
+            <td align="center"> Vlr ISS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRCHEQUE</td>
+            <td align="center"> Vlr Cheque</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DESPCART</td>
+            <td align="center"> Despesas c/ Cartório</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ISSRETIDO</td>
+            <td align="center"> ISS Retido</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> VLRDESC</td>
+            <td align="center"> Vlr Desconto</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMULTA</td>
+            <td align="center"> Vlr Multa</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRINSS</td>
+            <td align="center"> Vlr INSS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIPMULTA</td>
+            <td align="center"> Tipo Multa</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> '1'</td>
+            <td align="center"> 1-Incluso | 2-Extra Nota</td>
+         </tr><tr>
+            <td align="center"> VLRJURO</td>
+            <td align="center"> Vlr Juros</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIPJURO</td>
+            <td align="center"> Tipo Juro</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> '1'</td>
+            <td align="center"> 1-Incluso | 2-Extra Nota</td>
+         </tr><tr>
+            <td align="center"> BASEICMS</td>
+            <td align="center"> Base ICMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ALIQICMS</td>
+            <td align="center"> % ICMS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEMPBAIXA</td>
+            <td align="center"> Emp. da Baixa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTIPOPERBAIXA</td>
+            <td align="center"> Tipo Operação Baixa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DHTIPOPERBAIXA</td>
+            <td align="center"> Dt/Hr Tipo Operação</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> TO_DATE('01/01/1998', 'DD/MM/YYYY') </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRBAIXA</td>
+            <td align="center"> Vlr Baixa</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMREMESSA</td>
+            <td align="center"> Nro Remessa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> AUTORIZADO</td>
+            <td align="center"> Autorizado</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> RECDESP</td>
+            <td align="center"> Receita/Despesa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> -1-Despesa | 1-Receita</td>
+         </tr><tr>
+            <td align="center"> PROVISAO</td>
+            <td align="center"> Provisão</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> ORIGEM</td>
+            <td align="center"> Origem</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'F' </td>
+            <td align="center"> E-Estoque | F-Financeiro | P-Pessoal</td>
+         </tr><tr>
+            <td align="center"> TIPMARCCHEQ</td>
+            <td align="center"> Tipo Marcação Cheque</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'A' </td>
+            <td align="center"> A-Nominal ao fornecedor | B-Agrupar 
+nominal ao fornecedor | C-Nominal ao bco. de pgto. | D-Agrupar nominal 
+ao bco de pagto | E-Não nominal | F-Agrupar não nominal | G-Nominal ao 
+histórico | H-Agrupar nominal ao histórico | I-Sem emitir cheque | 
+J-Nominal à empresa | K-Agrupar nominal à empresa</td>
+         </tr><tr>
+            <td align="center"> NUNOTA</td>
+            <td align="center"> Nro Único Nota</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUBCO</td>
+            <td align="center"> Nro Único Bancário</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUDEV</td>
+            <td align="center"> Nro Único Devolução</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NURENEG</td>
+            <td align="center"> Nro Renegociação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CARTA</td>
+            <td align="center"> Nro Carta</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RATEADO</td>
+            <td align="center"> Rateado</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> DTENTSAI</td>
+            <td align="center"> Dt. Entrada e Saída</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODUSUBAIXA</td>
+            <td align="center"> Usuário Baixa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRPROV</td>
+            <td align="center"> Vlr Provisão Financeira</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> IRFRETIDO</td>
+            <td align="center"> IRRF Retido</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 'N'</td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> INSSRETIDO</td>
+            <td align="center"> INSS Retido</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CARTAODESC</td>
+            <td align="center"> Taxa Administradora</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTALTER</td>
+            <td align="center"> Últ. Alteração</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMCONTRATO</td>
+            <td align="center"> Nro Contrato</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ORDEMCARGA</td>
+            <td align="center"> Ordem de Carga</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODVEICULO</td>
+            <td align="center"> Veículo</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODBARRA</td>
+            <td align="center"> Código de Barras</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 50</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODUSU</td>
+            <td align="center"> Cód. Usuário</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SEQUENCIA</td>
+            <td align="center"> Sequência</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRVARCAMBIAL</td>
+            <td align="center"> Variação Cambial</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODIGOBARRA</td>
+            <td align="center"> Cód. Barras Receb.</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 55</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LINHADIGITAVEL</td>
+            <td align="center"> Linha Dig. Receb.</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 57</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRDESCEMBUT</td>
+            <td align="center"> Vlr Desc. Embutido</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRJUROEMBUT</td>
+            <td align="center"> Vlr Juros Embutidos</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMULTAEMBUT</td>
+            <td align="center"> Vlr Multa Embutida</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMOEDA</td>
+            <td align="center"> Vlr Moeda</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMOEDABAIXA</td>
+            <td align="center"> Vlr Moeda na Baixa</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUCOMPENS</td>
+            <td align="center"> Nro Compensação/Acerto</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCFO</td>
+            <td align="center"> CFOP</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMULTANEGOC</td>
+            <td align="center"> Vlr Multa Negociada</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRJURONEGOC</td>
+            <td align="center"> Vlr Juros Negociados</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRMULTALIB</td>
+            <td align="center"> Vlr Perdão de Multa</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRJUROLIB</td>
+            <td align="center"> Vlr Perdão de Juros</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTBAIXAPREV</td>
+            <td align="center"> Dt. Prevista p/ Baixa</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMOS</td>
+            <td align="center"> Nro da OS</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NATUREZAOPERDES</td>
+            <td align="center"> Natureza Oper. DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> A-A-Sem Dedução | B-B-Com Deducão | 
+C-C-Isenta de ISSQN | D-D-Devolução/Simples Remessa | E-E-Não Incidência
+ | F-F-Imune | G-G-Construção Civil | H-H-Regime Estimativa | 
+I-I-Sociedade Profissional | J-J-Microempresa | K-K-Depósito em Juízo | 
+L-L-Incentivo a Cultura | M-M-Inscrito na PBH | N-N-Turismo/Fundos | 
+O-O-Intermed./Public. - Isento | P-P-Intermediação / Publicidade | 
+Q-Q-Não Tributável</td>
+         </tr><tr>
+            <td align="center"> SERIENFDES</td>
+            <td align="center"> Série NF DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 4</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> MODELONFDES</td>
+            <td align="center"> Modelo NF DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODFUNC</td>
+            <td align="center"> Funcionário</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCONTATO</td>
+            <td align="center"> Contato</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUAPONTA</td>
+            <td align="center"> Nro Único Apontamento</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMBOR</td>
+            <td align="center"> Nro Borderô</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> M2</td>
+            <td align="center"> Metro Quadrado</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DIGSAFRA</td>
+            <td align="center"> Dígito Safra</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NFENTSEQFIX</td>
+            <td align="center"> Nf. Entrada Fixação/Sequência</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 15</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NFCOMPLFIX</td>
+            <td align="center"> Nf. Complemento Fixação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PDD</td>
+            <td align="center"> PDD</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CODUSUCOBR</td>
+            <td align="center"> CODUSUCOBR</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMNFSE</td>
+            <td align="center"> Nro. NFS-e</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 20</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRALIBERAR</td>
+            <td align="center"> Vlr. a liberar</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CHAVECTE</td>
+            <td align="center"> Chave CT-e</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 44</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CHAVECTEREF</td>
+            <td align="center"> Chave CT-e de referência</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 44</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NOMEEMITENTE_CMC7</td>
+            <td align="center"> Nome Emitente CMC7</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 160</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRCESSAO</td>
+            <td align="center"> Vlr. Cessão FDIC</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> IDLOTEFDIC</td>
+            <td align="center"> Identificador do Lote FDIC</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUPED</td>
+            <td align="center"> Número Único do Pedido</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODBCO_CMC7</td>
+            <td align="center"> Código Banco CMC7</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> AGENCIA_CMC7</td>
+            <td align="center"> Agência CMC7</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 5</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CONTA_CMC7</td>
+            <td align="center"> Conta CMC7</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CGC_CPF_CMC7</td>
+            <td align="center"> CNPJ/CPF CMC7</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCC</td>
+            <td align="center"> CODCC</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SITESPECIALRESP</td>
+            <td align="center"> Situação Especial de Responsabilidade DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> EXIGEISSQN</td>
+            <td align="center"> Exigibilidade do ISSQN DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> REGESPTRIBUT</td>
+            <td align="center"> Regime Especial de Tributação DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> MOTNAORETERISSQN</td>
+            <td align="center"> Motivo de não Retenção ISSQN DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> VLRFATCARTAO</td>
+            <td align="center"> Vlr. Fatura Cartão</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUCCR</td>
+            <td align="center"> Nro do cartão de crédito</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NROLOTEGNRE</td>
+            <td align="center"> Número Lote GNRE</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> STATUSGNRE</td>
+            <td align="center"> Status GNRE</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 50</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> REJEICAOGNRE</td>
+            <td align="center"> Motivo Rejeição GNRE</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 500</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUFTC</td>
+            <td align="center"> Nro único da fatura</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PARCRENEG</td>
+            <td align="center"> Parcelas da Renegociação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 20</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TPAGNFCE</td>
+            <td align="center"> Tipo de pgto para NFC-e</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 01-01-Dinheiro | 02-02-Cheque | 
+03-03-Cartão de Crédito | 04-04-Cartão de Débito | 05-05-Crédito Loja | 
+10-10-Vale Alimentação | 11-11-Vale Refeição | 12-12-Vale Presente | 
+13-13-Vale Combustível | 14-14-Duplicata Mercantil | 15-15-Boleto 
+Bancário | 90-90-Sem pagamento | 99-99-Outros</td>
+         </tr><tr>
+            <td align="center"> VALORPRESENTE</td>
+            <td align="center"> Valor Presente</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> JUROSAVP</td>
+            <td align="center"> Juros Ajuste do Valor Presente</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BLOQVAR</td>
+            <td align="center"> Bloq. Calculo Variação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 'N'</td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> VLRDESCCALC</td>
+            <td align="center"> Vlr. Desconto Calc.</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASEIRF</td>
+            <td align="center"> Base IRF</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> BASEINSS</td>
+            <td align="center"> Base INSS</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> MONIOCOREM</td>
+            <td align="center"> Monitora Ocorrência de Remessa</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> DTPRAZO</td>
+            <td align="center"> Dt. Prazo</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RECEBCARTAO</td>
+            <td align="center"> Recebim. c/ cartão</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> ABATIMENTO</td>
+            <td align="center"> Abatimento (Cob. Registrada)</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ABATIMENTOCAN</td>
+            <td align="center"> Abatimento Cancelado (Cob. Registrada)</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCBE</td>
+            <td align="center"> Acerto Benefício</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DESPADVOGADO</td>
+            <td align="center"> Desp. com Advogado(s)?</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CUSTASPROCESSUAIS</td>
+            <td align="center"> Custas Processuais?</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> DEPOSITOJUDICIAL</td>
+            <td align="center"> Depósito Judicial?</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> NUMPROCADMJUDIC</td>
+            <td align="center"> Nº Processo Administrativo/Judicial</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 21</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> OBRACONSTCIVIL</td>
+            <td align="center"> Obra de Construção Civil</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 1-1 - Empreitada Total | 2-2 - Empreitada Parcial</td>
+         </tr><tr>
+            <td align="center"> CLASSIFCESSAOOBRA</td>
+            <td align="center"> Classificação Cessão M.d.Obra</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 100000001-Limpeza, conservação ou 
+zeladoria | 100000002-Vigilância ou segurança | 100000003-Construção 
+civil | 100000004-Serviços de natureza rural | 100000005-Digitação | 
+100000006-Preparação de dados para processamento | 100000007-Acabamento |
+ 100000008-Embalagem | 100000009-Acondicionamento | 100000010-Cobrança |
+ 100000011-Coleta ou reciclagem de lixo ou de resíduos | 100000012-Copa |
+ 100000013-Hotelaria | 100000014-Corte ou ligação de serviços públicos |
+ 100000015-Distribuição | 100000016-Treinamento e ensino | 
+100000017-Entrega de contas e de documentos | 100000018-Ligação de 
+medidores | 100000019-Leitura de medidores | 100000020-Manutenção de 
+instalações, de máquinas ou de equipamentos | 100000021-Montagem | 
+100000022-Operação de máquinas, de equipamentos e de veículos | 
+100000023-Operação de pedágio ou de terminal de transporte | 
+100000024-Operação de transporte de passageiros | 100000025-Portaria, 
+recepção ou ascensorista | 100000026-Recepção, triagem ou movimentação 
+de materiais | 100000027-Promoção de vendas ou de eventos | 
+100000028-Secretaria e expediente | 100000029-Saúde | 
+100000030-Telefonia ou telemarketing | 100000031-Trabalho temporário na 
+forma da Lei nº 6.019, de janeiro de 1974</td>
+         </tr><tr>
+            <td align="center"> CODLST</td>
+            <td align="center"> Tipo de Serviço</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODTRIB</td>
+            <td align="center"> Tributação CT-e</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 0-00-Tributada integralmente | 
+10-10-Tributada e c/cobrança por substituiçåo | 20-20-Com redução de 
+base de cálculo | 30-30-Isenta e não tribut.e c/cobrança por subst. | 
+40-40-Isenta | 41-41-Não tributada | 50-50-Suspensão | 51-51-Diferimento
+ | 60-60-ICMS cobrado anteriormente por substituição | 70-70-Com redução
+ de base e c/cobrança por subst. | 90-90-Outras</td>
+         </tr><tr>
+            <td align="center"> CODCIDINICTE</td>
+            <td align="center"> Cód. Cid. Inicio CT-e</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCIDFIMCTE</td>
+            <td align="center"> Cód. Cid. Fim CT-e</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODOBRA</td>
+            <td align="center"> Cód. da Obra</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 15</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CHEQUERASTREADO_CMC7</td>
+            <td align="center"> Cheque rastreado</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUCHQ</td>
+            <td align="center"> Nro. cheque</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODREGUA</td>
+            <td align="center"> Régua</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> IDUNICO</td>
+            <td align="center"> Identificador boleto rápido</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SEQCAIXA</td>
+            <td align="center"> Seq. Caixa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMPARCELA</td>
+            <td align="center"> Parcela</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMCONTRATOLOC</td>
+            <td align="center"> Contrato de Locação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMNEGOCIACAO</td>
+            <td align="center"> Negociação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDTIMPBOL</td>
+            <td align="center"> Dt. Impressão Boleto</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDTREPASSE</td>
+            <td align="center"> Dt. Repasse</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDHBAIXA</td>
+            <td align="center"> Dt. Pagamento</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDATADEJUR</td>
+            <td align="center"> Dt. Ida Jurídico</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMNUMREG</td>
+            <td align="center"> Sequência Banco</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMORIGEM</td>
+            <td align="center"> Tipo Parcela</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> AC-Acumulada | AL-Aluguel | AR-Arras | 
+AV-Avulsa | BA-Balão | CC-Condomínio Comum | CD-Parcela CDU | 
+CM-Complemento | CP-Comissão Cancelada | CR-Compensar Rescisão | 
+DC-Pagamento Comissão | DP-Devolução Provisão | DR-Devolução Real | 
+DV-Financeiro Vinculado | EA-Extinta Aluguel | EN-Entrada | EV-Extinta 
+Avulsa | FB-Financiado Banco | FC-Fechamento | FF-Fechamento Banco | 
+FI-Financiamento | FP-Parceria | IT-ITU | JU-Juros | LT-Lotemento | 
+MF-MFD | NR-Negociação Rescisão | OU-Outros | PC-Comissão | 
+PD-Diferenciada | PI-Intermediária | PP-FPP | RB-Repasse ao Beneficiário
+ | RL-Registro de Lote | RP-Repasse</td>
+         </tr><tr>
+            <td align="center"> TIMNUFINORIG</td>
+            <td align="center"> Financeiro Origem</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMVENDAIMV</td>
+            <td align="center"> Contrato de venda do imóvel</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMRENEGIMV</td>
+            <td align="center"> Renegociação da venda do imóvel</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMVENDALOTE</td>
+            <td align="center"> Contrato de venda de lote</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMRENEGLOTE</td>
+            <td align="center"> Renegociação Contrato</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMSAC</td>
+            <td align="center"> Atendimento ao cliente (OS)</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMNOMEADVOGADO</td>
+            <td align="center"> Advogado</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 200</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDHGERREPASSE</td>
+            <td align="center"> Dh. Ger. Repasse</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMCONTAREP</td>
+            <td align="center"> Conta rep. prop.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMIMOVEL</td>
+            <td align="center"> Imóvel</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMCONTRATOADM</td>
+            <td align="center"> Contrato Adm.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMBLOQUEADA</td>
+            <td align="center"> Bloqueada</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 'N'</td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> TIMFECHAMENTOALU</td>
+            <td align="center"> Fechamento Aluguel Perc.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDTIMPBOLLOCAL</td>
+            <td align="center"> Dh. Imp. Local Boleto</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMFECHAMENTO</td>
+            <td align="center"> Fechamento Cond.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMRENEGCANCLOTE</td>
+            <td align="center"> Renegociado Por</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMCONTRATOLTV</td>
+            <td align="center"> Contrato de Venda Lotes</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMRESCISAOLTV</td>
+            <td align="center"> Rescisão de Contrato</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMCONTALANC</td>
+            <td align="center"> Conta Lançamento</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMTXADMGERALU</td>
+            <td align="center"> Tx Adm pela Parcela</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 'S'</td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> TIMFINGARANTORIG</td>
+            <td align="center"> Fin. Resp. Garantia</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMREPINTELIGENTE</td>
+            <td align="center"> Usuário Rep. Inteligente</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDHGERREPPARCIAL</td>
+            <td align="center"> Dh. Ger. Rep. Parcial</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMDTREPPARCIAL</td>
+            <td align="center"> Dt. Repasse Parcial</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMREPPARCIAL</td>
+            <td align="center"> Repasse Parcial</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> TIMVLRJUROCONTRATO</td>
+            <td align="center"> Vlr. Juro Contrato</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMVLRAMORTCONTRATO</td>
+            <td align="center"> Vlr. Amortização Contrato</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMVLRCORRMONET</td>
+            <td align="center"> Vlr. Corr. Monetária</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODIPTU</td>
+            <td align="center"> Conta IPTU</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMORIGRENEG</td>
+            <td align="center"> Repactuação</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> TIMRESCISAOLOC</td>
+            <td align="center"> Rescisão de Locação</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TIMTIPOINTERMED</td>
+            <td align="center"> Tipo de Intermediária</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODOBSPADRAO</td>
+            <td align="center"> Observação padrão</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUCKC</td>
+            <td align="center"> Nro. Checkout</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ISINTEGRADOFERCUS</td>
+            <td align="center"> ISINTEGRADOFERCUS</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> N-Não | S-Sim</td>
+      </tr></tbody></table>
+   
+</body></html>

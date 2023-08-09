@@ -1,0 +1,2 @@
+Schema::create('TSICUS', function (Blueprint $table) {
+});

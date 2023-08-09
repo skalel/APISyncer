@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class=" mcwdkk idc0_343"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <style>
+         table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <table width="100%" cellspacing="1" cellpadding="1" border="1">
+      <tbody><tr>
+         <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="left">TABELA</th>
+      </tr>
+      <tr>
+         <td align="left"> TSIEMP</td>
+      </tr>
+      </tbody></table><table width="100%" cellspacing="1" cellpadding="1" border="1">
+         <tbody><tr>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NOMECAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DESCRCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TIPOCAMPO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">TAMANHO</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">PK</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">NULL</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">DEFAULT</th>
+            <th bordercolor="#FFFFFF" bgcolor="#C0C0C0" align="center">OPCOES</th>
+         </tr>
+         <tr>
+            <td align="center"> CODEMP</td>
+            <td align="center"> Cód. Empresa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> S</td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NOMEFANTASIA</td>
+            <td align="center"> Nome Fantasia</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 40</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RAZAOSOCIAL</td>
+            <td align="center"> Razão Social</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 40</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RAZAOABREV</td>
+            <td align="center"> Razão Abreviada</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 15</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEMPMATRIZ</td>
+            <td align="center"> Empresa Matriz</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODEND</td>
+            <td align="center"> Endereço</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMEND</td>
+            <td align="center"> Número</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 6</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> COMPLEMENTO</td>
+            <td align="center"> Complemento</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 10</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODBAI</td>
+            <td align="center"> Bairro</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCID</td>
+            <td align="center"> Cód. Cidade</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 0</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CEP</td>
+            <td align="center"> CEP</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 8</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TELEFONE</td>
+            <td align="center"> Telefone</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 13</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> FAX</td>
+            <td align="center"> Fax</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 13</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> TELEX</td>
+            <td align="center"> Telex</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 12</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> EMAIL</td>
+            <td align="center"> Email</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 80</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> HOMEPAGE</td>
+            <td align="center"> Home Page</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 255</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NUMPROPR</td>
+            <td align="center"> Número de Proprietários</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> PRINCTITULAR</td>
+            <td align="center"> Principal Titular</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 40</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CGC</td>
+            <td align="center"> CNPJ/CPF</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 14</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> INSCESTAD</td>
+            <td align="center"> Inscrição Estadual</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 16</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> INSCMUN</td>
+            <td align="center"> Inscrição Municipal</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 16</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODMUN</td>
+            <td align="center"> Cód. Município</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NATESTAB</td>
+            <td align="center"> Natureza Estabelecimento</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> NATJUR</td>
+            <td align="center"> Natureza Jurídica</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> RAMOATIV</td>
+            <td align="center"> Ramo de Atividade</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 40</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> ATIVECON</td>
+            <td align="center"> Atividade Econômica</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> REGJUNTACOM</td>
+            <td align="center"> Reg. Junta Comercial (NIRE)</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 12</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DTREGJUNTA</td>
+            <td align="center"> Data Registro na Junta (NIRE)</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LOGOMARCA</td>
+            <td align="center"> Logomarca</td>
+            <td align="center"> BLOB</td>
+            <td align="center"> 4000</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> FINANCEIRO</td>
+            <td align="center"> Financeiro</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> ESTOQUE</td>
+            <td align="center"> Estoque</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CARGAS</td>
+            <td align="center"> Cargas</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> COMISSOES</td>
+            <td align="center"> Comissões</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> PRODUCAO</td>
+            <td align="center"> Produção</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> SUPDECISAO</td>
+            <td align="center"> Suporte a Decisão</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> LIVROSFISCAIS</td>
+            <td align="center"> Livros Fiscais</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CONTABILIDADE</td>
+            <td align="center"> Contabilidade</td>
+            <td align="center"> DATA/HORA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> FOLHAPAGTO</td>
+            <td align="center"> Folha de Pagamento</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODCNL</td>
+            <td align="center"> Código Nacional Localidade</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 10</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SIMPLES</td>
+            <td align="center"> Optante pelo SIMPLES</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 'N'</td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> LIMCURVA_B</td>
+            <td align="center"> Limite Curva B</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LIMCURVA_C</td>
+            <td align="center"> Limite Curva C</td>
+            <td align="center"> FLOAT</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> EMPAGRUPARGOL</td>
+            <td align="center"> Empresa p/ Agrupar no GOL</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SERIENFDES</td>
+            <td align="center"> Série NF DES-BH</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 4</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> MODELONFDES</td>
+            <td align="center"> Modelo Nota Fiscal</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 2</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODPARC</td>
+            <td align="center"> Cód. Parceiro</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 0 </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> COOPERATIVA</td>
+            <td align="center"> Cooperativa</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> DTCONVSOC</td>
+            <td align="center"> Data Conversão (Sociedade Simples p/ Empresária)</td>
+            <td align="center"> DATA</td>
+            <td align="center"> 7</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> DUPLIV</td>
+            <td align="center"> Gera duplicata do Livro para a Empresa do Parceiro</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'N' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> CPFRESP</td>
+            <td align="center"> CPF do responsável</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 11</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> CODREGTRIB</td>
+            <td align="center"> Cód. Regime Tribut.</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 1-Simples Nacional | 2-Simples Nacional - Sublimite | 3-Regime Normal</td>
+         </tr><tr>
+            <td align="center"> TIPOSN</td>
+            <td align="center"> Tipo de Partilha/Anexo SN</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> 1-Anexo I - Comércio | 2-Anexo II - 
+Indústria | 3-Anexo III - Rec. de locação de bens/móveis e prest. de 
+serv. não relac. no § 5o-C do art. 18 da Lei | 4-Anexo IV - Rec. 
+decorrentes da prest. de serv. relacionados no § 5o-C do art. 18 da Lei |
+ 7-Anexo V - Rec. decorrentes da prest. de serv. relacionados no § 5o-I 
+do art. 18 da Lei</td>
+         </tr><tr>
+            <td align="center"> RAZAOSOCIALCOMPLETA</td>
+            <td align="center"> Razão Social Completa</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 250</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LATITUDE</td>
+            <td align="center"> Latitude</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 255</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> LONGITUDE</td>
+            <td align="center"> Longitude</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 255</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> SIMPLESNACNAUF</td>
+            <td align="center"> Tem convênio Simples Nacional no Estado</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> N</td>
+            <td align="center"> 'S' </td>
+            <td align="center"> N-Não | S-Sim</td>
+         </tr><tr>
+            <td align="center"> RNTRC</td>
+            <td align="center"> RNTRC</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 8</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> COREMPRESA</td>
+            <td align="center"> Cor da empresa</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> 16777215</td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> QTDACESSOS</td>
+            <td align="center"> Quantidade de usuários logados simultaneamente</td>
+            <td align="center"> INTEIRO</td>
+            <td align="center"> 22</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+         </tr><tr>
+            <td align="center"> USARAZAOSOCIAL</td>
+            <td align="center"> Usar como Razão Social o campo</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 1</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> C-Razão Social Completa | R-Razão Social | null-Não se aplica</td>
+         </tr><tr>
+            <td align="center"> EMPIDENOTAS</td>
+            <td align="center"> ID empresa Enotas</td>
+            <td align="center"> STRING</td>
+            <td align="center"> 50</td>
+            <td align="center"> </td>
+            <td align="center"> Y</td>
+            <td align="center"> </td>
+            <td align="center"> </td>
+      </tr></tbody></table>
+   
+</body></html>

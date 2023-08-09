@@ -1,0 +1,2 @@
+Schema::create('TGFCAB', function (Blueprint $table) {
+});

@@ -1,0 +1,2 @@
+Schema::create('TGFTIT', function (Blueprint $table) {
+});
