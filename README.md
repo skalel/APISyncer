@@ -9,7 +9,7 @@
 
 ## About the Project
 
-Useful Link: \
+Useful links: \
 [Swagger Sankhya](http://swagger.sankhya.com.br/)\
 [Sankhya Developer](https://developer.sankhya.com.br/reference/api-de-integra%C3%A7%C3%B5es-sankhya)
 

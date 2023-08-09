@@ -21,4 +21,3 @@ yarn-error.log
 
 # added
 /database/migrations/2023_07_19_131441_insert_api_credentials.php
-/database/migrations/2023_08_09_143430_create_default_user.php
