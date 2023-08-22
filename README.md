@@ -9,7 +9,7 @@
 
 ## About the Project
 
-Useful links: \
+Useful Link: \
 [Swagger Sankhya](http://swagger.sankhya.com.br/)\
 [Sankhya Developer](https://developer.sankhya.com.br/reference/api-de-integra%C3%A7%C3%B5es-sankhya)
 
@@ -27,8 +27,9 @@ Este projeto foi desenvolvido para servir como uma intercomunicação entre a AP
 - [x] Create interface with accessible and simple elements
 - [x] Grant that the executions are being really made with a log table
 - [x] Serve the Database access to PBI users
-- [] Create a function to measure the time on each script execution and break if it is reaching the PHP.ini limit
-- [] Develop the routine to set the values to be send to the system
+- [] Create a function to measure the time on each script execution and break if it is reaching the PHP.ini limit (Temporarily out of scope)
+- [x] Create a solution to incremental updates on table (instead of refreshing all database)
+- [] Develop the routine to set the values to be send to the third system
 - [] Create method to do the data POST to the other system
 - [] Validate that the data is correctly send
 - [] Create a CRON task to get update from the ERP each 2 hours (between 8-4/8-16)

@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tgfpar', function (Blueprint $table) {
-          $table->integer('CODPARC')->length(22)->nullable();
+          $table->integer('CODPARC')->length(22)->primary();;
           $table->integer('CODVEND')->length(22)->default(0);
           $table->string('NOMEPARC')->length(100);
           $table->string('RAZAOSOCIAL')->length(100)->nullable();
@@ -242,6 +242,21 @@ return new class extends Migration
           $table->float('AD_COMISSAO')->nullable();
           $table->integer('TIPCLIENTESERVCOM')->nullable();
           $table->string('CHAVEPIX')->nullable();
+          $table->string('DESCONSIDESCBASE')->length(1)->nullable();
+          $table->string('DESCONSDESCINSS')->length(1)->nullable();
+          $table->string('CONSPARCADRCST')->length(1)->nullable();
+          $table->integer('NUVERSAO')->length(19)->nullable()->default(0);
+          $table->string('ATUNUVERSAO')->length(1)->nullable();
+          $table->string('UTILIZANUCADPARC')->length(1)->nullable();
+          $table->integer('TIPLOTACAO')->length(5)->nullable()->default(0);
+          $table->float('SALDODISPCAC')->length(126)->nullable();
+          $table->integer('CODIDENTCONS')->length(10)->nullable()->default(0);
+          $table->string('EXIGENOMEPARC')->length(1)->nullable();
+          $table->string('EMAILCTE')->length(255)->nullable();
+          $table->string('TIPOSPARC')->nullable();
+          $table->string('CONSIDTOTITENSTRIB')->length(1)->nullable();
+          $table->string('DESCRROTA')->nullable();
+          $table->float('PROVACRESCCAC')->length(126)->nullable();
         });
     }
 

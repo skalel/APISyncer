@@ -40,6 +40,19 @@
               </label>
 
               <div class="flex justify-between">
+                <div class="w-1/2 mr-1">
+                  <label for="lastoffset" class="block mb-2">Último offsetPage
+                    <input type="text" name="lastoffset" value="{{ $synctable->last_synced_offset }}" class="w-full px-4 py-2 border text-black border-gray-300 mb-4" disabled>
+                  </label>
+                </div>
+                <div class="w-1/2 ml-1">
+                  <label for="itemsquantity" class="block mb-2">Qtd. última lista
+                    <input type="text" name="itemsquantity" value="{{ $synctable->last_fetched_registers }}" class="w-full px-4 py-2 border text-black border-gray-300 mb-4" disabled>
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
                 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href={{ url()->previous() }}>Voltar</a>
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Editar</button>
               </div>

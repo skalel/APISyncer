@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('table_id');
             $table->string('name_table');
             $table->string('status')->length(100);
-            $table->string('error')->length(4000)->nullable();
+            $table->text('error')->length(24000)->nullable();
             $table->datetime('execution_date')->default(DB::raw('getutcdate()'));
 
             $table->foreign('table_id')->references('id')->on('synctable')->onDelete('cascade');

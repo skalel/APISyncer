@@ -17,8 +17,10 @@ return new class extends Migration
             $table->string('name_entity');
             $table->string('name_table');
             $table->string('url');
-            $table->text('request_model');
+            $table->text('request_model')->nullable();
             $table->text('expression')->nullable();
+            $table->integer('last_synced_offset')->nullable();
+            $table->integer('last_fetched_registers')->nullable();
             $table->timestamps();
         });
     }

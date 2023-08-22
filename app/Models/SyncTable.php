@@ -14,6 +14,8 @@ class SyncTable extends Model
 
     protected $table = 'synctable';
 
+    public $timestamps = false;
+
     protected $fillable = [
       'name',
       'name_entity',
@@ -21,12 +23,14 @@ class SyncTable extends Model
       'request_model',
       'url',
       'expression',
+      'last_synced_offset',
+      'last_fetched_registers',
   ];
 
   public function getCreatedAtAttribute($value)
   {
     if($value !== null){
-      return Carbon::parse($value)->setTimezone('America/Bahia')->format('Y-m-d H:i:s');
+      return Carbon::parse($value)->setTimezone('America/Bahia')->format('d/m/Y H:i:s');
     }
     return null;
   }
